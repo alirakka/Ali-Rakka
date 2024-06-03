@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <title>JobOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar" style="background-color: rgba(240, 248, 255, 0.804); border-radius: 9px;">
+      <div class="logo"><a href="#hero" style="color: black;">WorkLink</a></div>
+      <ul class="links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#job-listings">Job Listings</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars" style="color: black;"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#job-listings">Job Listings</a></li>
+    </div>
+  </header>
+  <div class="bg-modal">
+    <div class="modal-contents">
+
+      <div class="close">+</div>
+      <h2 style="color:aliceblue; margin-top:10px">Sign up</h2>
+
+      <form action="connect.php" class="form" method="post">
+        <input type="Email" placeholder="email" required class="input" name="Email">
+        <input type="password" placeholder="password" required class="input" name="password">
+        <input type="submit" name="" id="" class="submit">
+      </form>
+
+    </div>
+  </div>
+  <section id="hero">
+    <div>
+      <img src="image.png"></div>
+    <div class="hero-content">
+      <h2>Find Your Dream Job</h2>
+      <p>Explore thousands of job opportunities in various fields.</p>
+      <a href="#" id="button">Get Started</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 style="color:aliceblue;">Our Services</h2>
+    <br>
+    <p id="sentence" style="color:aliceblue; font-size: 1.5rem; ">Here are some of the services we provide:</p>
+    <div class="cards" id="service-cards-container" style="color:aliceblue">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Our experienced team of web developers can create custom websites
+          tailored to your specific needs. We specialize in frontend and backend development using the latest
+          technologies.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>We believe that good design is essential for a successful website.
+          Our talented designers can create visually appealing and user-friendly interfaces to enhance the user
+          experience.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-camera"></i>
+        <h3>Photography Services</h3>
+        <p>Capture your special moments with our professional photography services.
+          From weddings to corporate events, to ensure a perfect reflect of the occasion.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="job-listings">
+
+    <h2 style="color:aliceblue;">Featured Jobs</h2>
+    <div class="swipe-arrow previous"><i class="fas fa-chevron-left"></i></div>
+    <ul class="job-cards" id="job">
+      <div class="swipe-arrow next"><i class="fas fa-chevron-right"></i></div>
+      <div class="slider">
+        <div class="job-card">
+          <h3>Web Developer</h3>
+          <p>Company A</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <h3>UX Designer</h3>
+          <p>Company E</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn1">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <h3>Marketing Manager</h3>
+          <p>Company F</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn2">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <h3>Product Manager</h3>
+          <p>Company G</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn3">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <h3>Business Analyst</h3>
+          <p>Company H</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn4">Apply Now</a>
+        </div>
+        <div class="job-card">
+          <h3>Graphic Designer</h3>
+          <p>Company B</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn5">Apply Now</a>
+        </div>
+        <div class="job-card">
+          <h3>Software Engineer</h3>
+          <p>Company C</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn6">Apply Now</a>
+        </div>
+        <div class="job-card">
+          <h3>Data Analyst</h3>
+          <p>Company D</p>
+          <p>Location: City, Country</p>
+          <a href="#" class="job-button" id="btn7">Apply Now</a>
+        </div>
+      </div>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Job Opportunities. All rights reserved &copy;</p><br>
+    <div id="footerName">
+      <p>Ali Rakka</p>
+    </div>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
